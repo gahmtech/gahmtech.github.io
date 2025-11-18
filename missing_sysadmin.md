@@ -49,9 +49,9 @@ Now it looks like we got an entry-point on ssh? Lets try:
 
 There we go, first entrance!
 
-ssh trainee@10.3.10.251
+ssh trainee@10.3.10.xxx
 Welcome to The Missing Sysadmin!
-trainee@10.3.10.251's password: 
+trainee@10.3.10.xxx's password: 
 Linux TheMissingSysadmin 6.12.41+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.41-1 (2025-08-12) x86_64
 
 The programs included with the Debian GNU/Linux system are free software;
@@ -60,7 +60,7 @@ individual files in /usr/share/doc/*/copyright.
 
 Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
 permitted by applicable law.
-Last login: Mon Nov 17 09:06:43 2025 from 10.3.10.230
+Last login: Mon Nov 17 09:06:43 2025 from 10.3.10.xxx
 trainee@TheMissingSysadmin:~$ 
 
 `cat flag.txt` reveals the first flag!
