@@ -2,7 +2,7 @@
 
 ## Writeup from noob to root
 
-So this is a new CTF i found, called "The Missing Sysadmin" by Björn Ettelman
+So this is a new CTF, called "The Missing Sysadmin" by Björn Ettelman
 
 <img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/f41fc666-4139-4704-9742-06e5fe3aaac3" />
 
@@ -79,6 +79,39 @@ Let's try to ssh to it: `ssh webbackup@10.3.10.xxx` and entering the password 'c
 
 Allright, second entrance!
 sudo -l and other common privescs shows nothing interresting.
+so there must be something in the tar-archive:
+
+webbackup@TheMissingSysadmin:~$ ls
+webserver_backup.tar.gz
+
+Downloading it and extracting reveals a flag.txt and a README.txt
+YES! One more flag collected!!
+
+Let's check the README:
+cat README.txt
+This is an archived snapshot of the old webserver.
+You might find credentials in the site database: site.db
+
+An easy way to exctract data from database is to do a strings:
+
+strings site.db
+SQLite format 3
+tableusersusers
+CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
+%othernot_this_one
+-cryptoletsgetsomemoney
+
+That reveals an user crypto with pass letsgetsomemoney
+
+Let's try to ssh to it: `ssh crypto@10.3.10.xxx` and entering the password 'letsgetsomemoney'
 
 
 
+
+
+cat secret_message.txt
+The sysadmin never trusted password managers...
+Username: sysadmin
+Password: --removed--
+
+YES! One more collected, now we got 
