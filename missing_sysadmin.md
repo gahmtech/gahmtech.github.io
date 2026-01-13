@@ -34,6 +34,7 @@ Let's crawl the web for hidden files with gobuster
 `gobuster dir -x html -u http://10.3.10.xxx/ -w /wordlist-big.txt`
 
 After a while it shows up some results:
+
 ===============================================================
 Starting gobuster in directory enumeration mode
 ===============================================================
