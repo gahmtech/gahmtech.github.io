@@ -10,10 +10,11 @@ So how do i start gathering information?
 
 Let's begin with an basic nmap scan to check for open ports.
 
-`nmap <IP>`
+`❯ nmap <IP>`
 
 The results shows only three open ports:
 
+```bash
 nmap 10.3.10.xxx
 Starting Nmap 7.92 ( https://nmap.org ) at 2025-11-18 12:03 CET
 Nmap scan report for 10.3.10.xxx
@@ -25,7 +26,8 @@ PORT     STATE SERVICE
 5000/tcp open  upnp
 
 Nmap done: 1 IP address (1 host up) scanned in 3.05 seconds
-
+```
+<br><br>
 Visiting the page and inspecting the code shows no clues on how to breach, and there are no /robots.txt available.
 So whats on the port 5000? It shows a scoreboard and a endpoint of /submit to add your flags..
 
@@ -50,7 +52,8 @@ Now it looks like we got an entry-point on ssh? Lets try:
 
 There we go, first entrance!
 
-ssh trainee@10.3.10.xxx
+```
+❯ ssh trainee@10.3.10.xxx
 Welcome to The Missing Sysadmin!
 trainee@10.3.10.xxx's password: 
 Linux TheMissingSysadmin 6.12.41+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.41-1 (2025-08-12) x86_64
@@ -63,20 +66,21 @@ Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
 permitted by applicable law.
 Last login: Mon Nov 17 09:06:43 2025 from 10.3.10.xxx
 trainee@TheMissingSysadmin:~$ 
+```
 
-`cat flag.txt` reveals the first flag!
+`❯ cat flag.txt` reveals the first flag!
 
 but there are also a directory named *notes* with an subfolder *old_logs* containing a lot of old log-files.
 Aaah, the webpage mentioned "check old logs"..
 
 Viewing the first one shows a lot of login logs... lets se if we can extract some credentials...
 
-`cat *.log | grep "pass="` to list them all and only show lines containing *pass=*
+`❯ cat *.log | grep "pass="` to list them all and only show lines containing *pass=*
 
 Looks like a lot of login attempts, a brute force attack?
 However, one line sticks out: `login user=webbackup pass=coffe2025`
 
-Let's try to ssh to it: `ssh webbackup@10.3.10.xxx` and entering the password 'coffee2025'
+Let's try to ssh to it: <br>`❯ ssh webbackup@10.3.10.xxx` <br>and entering the password 'coffee2025'
 
 Allright, second entrance!
 sudo -l and other common privescs shows nothing interresting.
@@ -100,19 +104,39 @@ SQLite format 3
 tableusersusers
 CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
 %othernot_this_one
--cryptoletsgetsomemoney
+-crypto--REDACTED--
 
-That reveals an user crypto with pass letsgetsomemoney
+That reveals an user 'crypto' with password '--REDACTED--'.
 
-Let's try to ssh to it: `ssh crypto@10.3.10.xxx` and entering the password 'letsgetsomemoney'
+Let's try to ssh to it: `ssh crypto@10.3.10.xxx` and entering the password '--REDACTED--'
+
+```bash
+❯ ssh crypto@10.3.10.251
+Welcome to The Missing Sysadmin!
+crypto@10.3.10.251's password: 
+Linux TheMissingSysadmin 6.12.41+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.41-1 (2025-08-12) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Sun Dec  7 20:02:49 2025 from 10.3.10.230
+crypto@TheMissingSysadmin:~$ ls
+web_secret.zip
+crypto@TheMissingSysadmin:~$
+```
 
 
 
 
-
-cat secret_message.txt
+```bash
+❯ cat secret_message.txt
 The sysadmin never trusted password managers...
 Username: sysadmin
-Password: --removed--
+Password: --redacted--
+FLAG{--REDACTED--}
+```
 
-YES! One more collected, now we got 
+YES! One more flag collected, now we got 
