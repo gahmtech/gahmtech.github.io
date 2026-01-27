@@ -1,2 +1,6 @@
 # GahmTech 2025
-missing_sysadmin.md
+
+Write-Ups from my completed CTF-challenges:
+
+
+[Missing Sysadmin](missing_sysadmin.md)
