@@ -15,4 +15,4 @@ Repos made by me:
 
 [XOR Encrypter](https://github.com/gahmtech/xor-encrypter)
 
-A simple program written in Python to XOR-encrypt to obfuscate payloads.
+A simple program written in Python to obfuscate payloads by XOR-encrypting.
