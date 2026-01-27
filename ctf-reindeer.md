@@ -20,11 +20,9 @@ This looks like a Base64 code, lets put it in cyberchef.
 
 It reveals something containing exif-data... images?
 Trying the extract files in cyberchef reveals two images:
-![[Pasted image 20260105124105.png]]
 
-and:
-![[Pasted image 20260105124133.png]]
 
+<img src="ctf-reindeer1.png" width="200"> and <img src="ctf-reindeer2-passwd.png" width="200">
 
 Now what?
 Then i remember a challenge at picoCTF using steghide to extract data from image:
