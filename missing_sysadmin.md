@@ -1,7 +1,7 @@
 # The Missing Sysadmin
 
-Author: Michael Gahm
-Date: 2026-01-21
+Author: Michael Gahm<br>
+Date: 2026-01-21<br>
 
 This is my first writeup of a completed CTF challenge.
 
