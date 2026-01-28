@@ -5,11 +5,14 @@ Date: 2026-01-21<br>
 
 This is my first writeup of a completed CTF challenge.
 
-So this is a CTF, called "The Missing Sysadmin" by Björn Ettelman
+### Introduction
+So this is a CTF, called "The Missing Sysadmin" by Björn Ettelman.
 
 <img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/f41fc666-4139-4704-9742-06e5fe3aaac3" />
 
 So how do i start gathering information?
+
+### Gathering information
 
 Let's begin with an basic nmap scan to check for open ports.
 
@@ -50,7 +53,9 @@ status.html          (Status: 200) [Size: 637]
 The index.html is irrelevant, but *status.html* is interresting, lets check it out:
 <img width="828" height="153" alt="image" src="https://github.com/user-attachments/assets/7b31cfe2-d8e7-4cd8-a064-8a7bf4e40e43" />
 
-Now it looks like we got an entry-point on ssh? Lets try:
+Now it looks like we got an entry-point on ssh? Lets try!
+<br><br>
+### Initial access
 
 `ssh trainee@10.3.10.xxx` and entering the password 'training123'
 
@@ -82,7 +87,10 @@ Viewing the first one shows a lot of login logs... lets se if we can extract som
 Looks like a lot of login attempts, a brute force attack?
 However, one line sticks out: `login user=webbackup pass=coffe2025`
 
-Let's try to ssh to it:
+Let's try to ssh to it.
+
+<br><br>
+### Privesc - Second user
 
 `❯ ssh webbackup@10.3.10.xxx` <br>
 and entering the password 'coffee2025'
@@ -117,9 +125,10 @@ CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)
 -crypto--REDACTED--
 ```
 That reveals an user 'crypto' with password '--REDACTED--'.
-
+<br><br>
+### Privesc - Third user
 Let's try to ssh to it using `ssh crypto@10.3.10.xxx` and entering the password '--REDACTED--'
-```
+
 
 ```bash
 ❯ ssh crypto@10.3.10.251
@@ -154,6 +163,8 @@ FLAG{--REDACTED--}
 ```
 
 YES! Another flag collected! Lets explore next user.
+<br><br>
+### Privesc - Fourth user and root access
 
 As always, start with basic privesc for the user.<br>
 My first goto-command is `sudo -l` which gives me:
