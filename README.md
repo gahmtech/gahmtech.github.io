@@ -6,7 +6,7 @@ Location: Falköping, Sweden & Hybrid-friendly<br>
 Email: <michael.gahm@iths.se><br>
 <br>
 Min profil på Tryhackme:<br>
-[![THM Profile](https://tryhackme-badges.s3.amazonaws.com/SweMike.png)](https://tryhackme.com/p/SweMike)]<br>
+[![THM Profile](https://tryhackme-badges.s3.amazonaws.com/SweMike.png)](https://tryhackme.com/p/SweMike)<br>
 och på HackTheBox:<br>
 [![HTB Profile](https://github.com/user-attachments/assets/f48c2fb0-3b4c-4aea-8b6e-f13ecb050099)](https://app.hackthebox.com/users/2681725)<br>
 <br><br><br>
