@@ -1,10 +1,9 @@
 # GahmTech
 
 Author: Michael Gahm
-<br>
+<br><br><br>
 
 Write-Ups from my completed CTF-challenges:
-
 
 [Missing Sysadmin](missing_sysadmin.md)
 
