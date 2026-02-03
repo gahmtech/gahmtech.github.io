@@ -23,8 +23,9 @@ Repos made by me:
 A simple program written in Python to obfuscate payloads by XOR-encrypting.
 <br><br><br><br>
 Other achivements:<br>
-<img width="30%" alt="image" src="https://github.com/user-attachments/assets/8035dead-1dd5-45ce-af5c-e3edd3be2f8f" />
-<img width="30%" alt="image" src="https://github.com/user-attachments/assets/b39542a7-a28f-4593-bb15-7484327ce202" />
+<img width="50%" alt="image" src="https://github.com/user-attachments/assets/8035dead-1dd5-45ce-af5c-e3edd3be2f8f" />
+<img width="50%" alt="image" src="https://github.com/user-attachments/assets/b39542a7-a28f-4593-bb15-7484327ce202" /><br>
+
 <img width="30%" alt="image" src="https://github.com/user-attachments/assets/8111ed16-910e-4c8e-9499-a9807f91a0a2" />
 
 
