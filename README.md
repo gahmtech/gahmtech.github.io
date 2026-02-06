@@ -14,8 +14,8 @@ lägger jag mycket tid på egna laborationer och självstudier från Tryhackme o
 Tidigare har jag jobbat som elkonsult i dryga 10år, där jag fått stor vana från konsultbranschen och arbete i både långa och<br>
 korta projekt. Arbete i större team men även självständigt ansvar med budgethantering.
 
-Söker en miljö där jag kan vara med och bidra med mina egna kunskaper och samtidigt utvecklas. Tar med mig ett stort ansvarstagande<br>
-och dokumentationsvana.
+Söker en miljö där jag kan vara med och bidra med mina egna kunskaper och samtidigt utvecklas.<br>
+Tar med mig ett stort ansvarstagande och dokumentationsvana men även mycket positiv energi.
 <br>
 <br>
 Verktyg och resurser:
