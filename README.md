@@ -55,6 +55,6 @@ A simple program written in Python to obfuscate payloads by XOR-encrypting.
 <br><br><br><br>
 Certifikat och andra meriter:<br>
 - [Tryhackme - Jr Penetration Tester](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-FPETR8PSHI.pdf)
-- [Tryhackme - Cybersecurity 101](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-OP5DREDWLH.pdf)
+- [Tryhackme - Cyber Security 101](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-OP5DREDWLH.pdf)
 
 
