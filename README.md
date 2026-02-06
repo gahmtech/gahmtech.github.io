@@ -27,7 +27,10 @@ Verktyg och resurser:
 - Sysreptor
 - Virtual Manager
 - Proxmox för viruell miljö
-- Nmap och andra mindre program för nätverksutforskning
+- Nmap
+- NetExec
+- Fuff
+- Gobuster m.m.
 <br>
 <br>
 <br>
