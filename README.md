@@ -1,7 +1,6 @@
 # Michael Gahm
-### Snabb fakta:
 #### Student IT-säkerhetstestare
-#### Location: Falköping & Hybrid-friendly<br>
+#### Location: Falköping, Skaraborg & Hybrid-friendly<br>
 #### Email: <michael.gahm@iths.se><br>
 <br><br>
 Studerar till **IT-säkerhetstestare** på distans hos IT-högskolan (2025-2027).<br>
