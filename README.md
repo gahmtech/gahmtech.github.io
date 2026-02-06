@@ -53,8 +53,8 @@ Repos made by me:
 
 A simple program written in Python to obfuscate payloads by XOR-encrypting.
 <br><br><br><br>
-Other achivements:<br>
-<img width="40%" alt="image" src="https://github.com/user-attachments/assets/8035dead-1dd5-45ce-af5c-e3edd3be2f8f" />
-<img width="40%" alt="image" src="https://github.com/user-attachments/assets/b39542a7-a28f-4593-bb15-7484327ce202" />
+Certifikat och andra meriter:<br>
+- [Tryhackme - Jr Penetration Tester](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-FPETR8PSHI.pdf)
+- [Tryhackme - Cybersecurity 101](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-OP5DREDWLH.pdf)
 
 
