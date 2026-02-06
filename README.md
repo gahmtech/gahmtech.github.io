@@ -1,10 +1,10 @@
-# GahmTech
-
-Name: Michael Gahm<br>
-Occupation: Cybersecurity student<br>
-Location: Falköping, Sweden & Hybrid-friendly<br>
-Email: <michael.gahm@iths.se><br>
+# Michael Gahm
+### Student IT-säkerhetstestare
+### Location: Falköping & Hybrid-friendly<br>
+### Email: <michael.gahm@iths.se><br>
 <br>
+
+
 Min profil på Tryhackme:<br>
 [![THM Profile](https://tryhackme-badges.s3.amazonaws.com/SweMike.png)](https://tryhackme.com/p/SweMike)<br>
 och på HackTheBox:<br>
