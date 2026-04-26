@@ -11,7 +11,7 @@ Student IT-säkerhetstestare
 Driven student i IT-säkerhetstestering på distans hos IT-högskolan (2025-2027). Med en bakgrund som konsult inom elbranschen har jag erfarenhet av projektledning och teamarbete. Min drivkraft ligger i att lära mig nya saker, vilket jag aktivt utvecklar genom självstudier på TryHackMe och HackTheBox.
 
 ## Relevant erfarenhet
-*   **Elkonsult** (2015-2024)
+**Elkonsult** (2015-2024)
     *   Ledde projekt av olika längder, visar på god organisatorisk förmåga.
     *   Arbetade i stora team för att uppnå gemensamma mål.
     *   Ansvarig för budgethantering i kundnära initiativ.
