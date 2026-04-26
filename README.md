@@ -12,6 +12,7 @@ Driven student i IT-säkerhetstestering på distans hos IT-högskolan (2025-2027
 
 ## Relevant erfarenhet
 **Elkonsult** (2015-2024)
+
     *   Ledde projekt av olika längder, visar på god organisatorisk förmåga.
     *   Arbetade i stora team för att uppnå gemensamma mål.
     *   Ansvarig för budgethantering i kundnära initiativ.
