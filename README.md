@@ -31,9 +31,8 @@ Kurser:
 *   **Operativsystem:** Kali Linux (med eget anpassat OS för pentesting)
 *   **Virtualisering & Hantering:** Proxmox, Virtual Manager
 
-## Tidiagre arbetslivserfarenhet
+## Tidigare arbetslivserfarenhet
 *   **Elkonsult** (2015-2024)
-    *   Ledde projekt av olika längder, visar på god organisatorisk förmåga.
     *   Arbetade i stora team för att uppnå gemensamma mål.
     *   Ansvarig för budgethantering i kundnära initiativ.
 
